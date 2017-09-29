@@ -2,7 +2,8 @@
 // Select size input
 
 
-
+//var chosenColor = colorPicker.value;
+//chosenColor = "#000000";
 
 
 $("#sizePicker").submit(function(event) {
@@ -27,3 +28,8 @@ $("#sizePicker").submit(function(event) {
         }
     }
 });
+
+/*$("#colorPicker").change(function() {
+
+    console.log("the chosen color is: " + colorPicker.value);
+});*/
