@@ -2,8 +2,8 @@
 // Select size input
 
 
-//var chosenColor = colorPicker.value;
-//chosenColor = "#000000";
+/*var chosenColor = colorPicker.value;
+console.log(chosenColor);*/
 
 
 $("#sizePicker").submit(function(event) {
@@ -30,6 +30,7 @@ $("#sizePicker").submit(function(event) {
 });
 
 /*$("#colorPicker").change(function() {
-
-    console.log("the chosen color is: " + colorPicker.value);
+        var chosenColor = colorPicker.value;
+    //console.log("the chosen color is: " + colorPicker.value);
+    console.log(chosenColor);
 });*/
