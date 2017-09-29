@@ -2,9 +2,11 @@
 
 ## Project for the Front-End Web Developer Nanodegree - Intermediate Javascript
 
-You’ll build a single-page web app that allows users to draw pixel art on a customizable canvas.
+The live app can be seen at https://alffox.github.io/pixel-art-maker/
 
-Your users should be able to:
+This is a single-page web app that allows users to draw pixel art on a customizable canvas.
+
+Users should be able to:
 
 * Dynamically set the size of the table.
 * Choose a color.
