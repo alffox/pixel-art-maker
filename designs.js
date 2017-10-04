@@ -5,6 +5,14 @@ $(document).ready(function() {
 
     var isMouseDown = false;
 
+    $("#pixel_canvas").mousedown(function(){
+        isMouseDown = true;
+    });
+
+    $("#pixel_canvas").mouseup(function(){
+        isMouseDown = false;
+    });
+
     $("#sizePicker").submit(function(event) {
         var gridHeight = $("#input_height").val();
         var gridWidth = $("#input_width").val();
@@ -24,20 +32,11 @@ $(document).ready(function() {
                 $("tr").last().append("<td></td>");
             }
         }
-    }
-
-    $("td").mousedown(function() {
-        isMouseDown = true;
-        var chosenColor = $("#colorPicker").val();
-        $("td").mouseenter(function () {
-          if (isMouseDown) { $(this).css("backgroundColor", chosenColor);}
-      });
-    });
-
-    $(document)
-    .mouseup(function () {
-      isMouseDown = false;
-  });
+        $("td").mouseover(function() {
+            if (isMouseDown)
+                var chosenColor = $("#colorPicker").val();
+            $(this).css("backgroundColor", chosenColor);
+        });
+    };
 });
-
 });
