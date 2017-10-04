@@ -1,15 +1,15 @@
     //declaring isMouseDown boolean to use when keeping the mouse button pressed
     var isMouseDown;
 
-    $("#pixel_canvas").mousedown(function(){
+    $("body").mousedown(function(){
         isMouseDown = true;
     });
 
-    $("#pixel_canvas").mouseup(function(){
+    $("body").mouseup(function(){
         isMouseDown = false;
     });
 
-    //get user inputs to cuild the grid
+    //get user inputs to build the grid
     $("#sizePicker").submit(function(event) {
         var gridHeight = $("#input_height").val();
         var gridWidth = $("#input_width").val();
@@ -27,13 +27,16 @@
             $("#pixel_canvas").append("<tr></tr>");
             for (var column = 0; column < gridHeight; column++) {
                 $("tr").last().append("<td></td>");
-                //changing the above line to $("tr").last().append('<td onmousedown="return false"></td>'); prevents the dragging effect, but it looks a hack to me
             }
         }
         //as long as the mouse is pressed, color table cells
         $("td").mouseover(function() {
             if (isMouseDown)
                 var chosenColor = $("#colorPicker").val();
+            $(this).css("backgroundColor", chosenColor);
+        });
+        $("td").click(function() {
+            var chosenColor = $("#colorPicker").val();
             $(this).css("backgroundColor", chosenColor);
         });
     };
