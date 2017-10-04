@@ -1,10 +1,12 @@
 // Select color input
 // Select size input
 
-$("#sizePicker").submit(function(event) {
-    var gridHeight = $("#input_height").val();
-    var gridWidth = $("#input_width").val();
-    $("#input").next().text();
+$(document).ready(function() {
+
+    $("#sizePicker").submit(function(event) {
+        var gridHeight = $("#input_height").val();
+        var gridWidth = $("#input_width").val();
+        $("#input").next().text();
     //prevent refreshing upon submission
     event.preventDefault();
     // When size is submitted by the user, call makeGrid()
@@ -21,12 +23,11 @@ $("#sizePicker").submit(function(event) {
             }
         }
     }
+
+    $("td").click(function() {
+        var chosenColor = $("#colorPicker").val();
+        $(this).css("backgroundColor", chosenColor);
+    });
 });
 
-$("#colorPicker").change(function() {
-    chosenColor = colorPicker.value;
-    //console.log("the chosen color is: " + chosenColor);
-    $("td").click(function() {
-    $(this).css("backgroundColor", chosenColor);
-    });
 });
