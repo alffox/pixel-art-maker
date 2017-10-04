@@ -3,6 +3,8 @@
 
 $(document).ready(function() {
 
+    var isMouseDown = false;
+
     $("#sizePicker").submit(function(event) {
         var gridHeight = $("#input_height").val();
         var gridWidth = $("#input_width").val();
@@ -25,9 +27,17 @@ $(document).ready(function() {
     }
 
     $("td").mousedown(function() {
+        isMouseDown = true;
         var chosenColor = $("#colorPicker").val();
-        $(this).css("backgroundColor", chosenColor);
+        $("td").mouseenter(function () {
+          if (isMouseDown) { $(this).css("backgroundColor", chosenColor);}
+      });
     });
+
+    $(document)
+    .mouseup(function () {
+      isMouseDown = false;
+  });
 });
 
 });
