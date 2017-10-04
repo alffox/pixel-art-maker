@@ -24,7 +24,7 @@ $(document).ready(function() {
         }
     }
 
-    $("td").click(function() {
+    $("td").mousedown(function() {
         var chosenColor = $("#colorPicker").val();
         $(this).css("backgroundColor", chosenColor);
     });
