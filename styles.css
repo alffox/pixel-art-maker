@@ -45,3 +45,7 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+#clear_canvas {
+    margin-top: 20px;
+}

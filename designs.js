@@ -1,4 +1,4 @@
-    // declaring isMouseDown boolean to use when keeping the mouse button pressed
+    // declaring a boolean var that will be used when keeping the mouse button pressed
     var isMouseDown;
 
     $("body").mousedown(function(){
@@ -14,9 +14,9 @@
         var gridHeight = $("#input_height").val();
         var gridWidth = $("#input_width").val();
         $("#input").next().text();
-    //prevent grid from refreshing upon submission
+    // prevent grid from refreshing upon submission
     event.preventDefault();
-    // When size is submitted by the user, build actual grid
+    // when size is submitted by the user, build actual grid
     makeGrid();
 
     function makeGrid() {
@@ -39,6 +39,11 @@
             $("td").click(function() {
                 var chosenColor = $("#colorPicker").val();
                 $(this).css("backgroundColor", chosenColor);
+            });
+
+            // button to clear the colors on the canvas
+            $("#clear_canvas").click(function() {
+                $("td").css("backgroundColor", "transparent");
             });
         });
     };
