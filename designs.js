@@ -43,7 +43,7 @@
 
             // button to clear the colors on the canvas
             $("#clear_canvas").click(function() {
-                $("td").css("backgroundColor", "transparent");
+                $("td").css("backgroundColor", "");
             });
         });
     };

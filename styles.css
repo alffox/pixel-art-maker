@@ -8,7 +8,8 @@ h1 {
     margin: 0.2em;
 }
 
-h2 {
+h2,
+#clear_canvas {
     margin: 1em 0 0.25em;
 }
 
@@ -44,8 +45,4 @@ td {
 
 input[type=number] {
     width: 6em;
-}
-
-#clear_canvas {
-    margin-top: 20px;
 }
