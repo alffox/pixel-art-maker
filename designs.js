@@ -28,10 +28,8 @@
             // clear any previous grids
             $("#pixel_canvas").find("tr", "td").remove();
             // build actual grid HTML elements
-            var row = 0;
-            while (row = row < gridWidth) {
+            for (var row = 0; row < gridWidth; row++) {
                 $("#pixel_canvas").append("<tr></tr>");
-                row = row + 1;
                 for (var column = 0; column < gridHeight; column++) {
                     $("tr").last().append("<td></td>");
                 }
