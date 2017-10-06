@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    font-family: 'Geostar Fill', cursive;
+    font-family: "Geostar Fill", cursive;
     font-size: 70px;
     margin: 0.2em;
 }
@@ -39,7 +39,6 @@ td {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
 }
 
 input[type=number] {

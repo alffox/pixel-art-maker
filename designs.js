@@ -1,4 +1,4 @@
-    // declaring a boolean var that will be used when keeping the mouse button pressed
+    // declaring a boolean that will be used when keeping the mouse button pressed
     var isMouseDown;
 
     $("body").mousedown(function() {
