@@ -37,11 +37,11 @@
                 }
             }
 
-            // as long as the mouse is pressed, color table cells
+            // as long as the mouse is pressed, color table cells as if it was a real paintbrush
             $("td").mouseover(function() {
                 if (isMouseDown)
                     $(this).css("backgroundColor", $("#colorPicker").val());
-                // keep original mouse cursor pointer when painting
+                // keep original mouse cursor pointer shape when painting
                 $("#pixel_canvas").css("cursor", "default");
 
                 // even a single mouse click should color a cell
