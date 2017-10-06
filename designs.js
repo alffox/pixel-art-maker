@@ -1,5 +1,5 @@
     // declaring a boolean that will be used when keeping the mouse button pressed
-    var isMouseDown;
+    let isMouseDown;
 
     $("body").mousedown(function() {
         isMouseDown = true;
@@ -16,8 +16,8 @@
 
     // get user inputs to build the grid
     $("#sizePicker").submit(function(event) {
-        var gridHeight = $("#input_height").val();
-        var gridWidth = $("#input_width").val();
+        let gridHeight = $("#input_height").val();
+        let gridWidth = $("#input_width").val();
         $("#input").next().text();
         // prevent grid from refreshing upon submission
         event.preventDefault();
@@ -28,9 +28,9 @@
             // clear any previous grids
             $("#pixel_canvas").find("tr", "td").remove();
             // build actual grid HTML elements
-            for (var row = 0; row < gridWidth; row++) {
+            for (let row = 0; row < gridWidth; row++) {
                 $("#pixel_canvas").append("<tr></tr>");
-                for (var column = 0; column < gridHeight; column++) {
+                for (let column = 0; column < gridHeight; column++) {
                     $("tr").last().append("<td></td>");
                 }
             }
