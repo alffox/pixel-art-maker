@@ -39,6 +39,8 @@
             $("td").mouseover(function() {
                 if (isMouseDown)
                     $(this).css("backgroundColor", $("#colorPicker").val());
+                // keep original mouse cursor pointer when painting
+                $("#pixel_canvas").css("cursor", "default");
 
                 // even a single mouse click should color a cell
                 $("td").click(function() {
