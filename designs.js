@@ -38,12 +38,11 @@
             // as long as the mouse is pressed, color table cells
             $("td").mouseover(function() {
                 if (isMouseDown)
-                    var chosenColor = $("#colorPicker").val();
-                $(this).css("backgroundColor", chosenColor);
+                    $(this).css("backgroundColor", $("#colorPicker").val());
+
                 // even a single mouse click should color a cell
                 $("td").click(function() {
-                    var chosenColor = $("#colorPicker").val();
-                    $(this).css("backgroundColor", chosenColor);
+                    $(this).css("backgroundColor", $("#colorPicker").val());
                 });
             });
         };
