@@ -25,12 +25,8 @@
         makeGrid();
 
         function makeGrid() {
-            /*clear any previous grids with a while loop as per project specs.
-            Use $('#pixel_canvas').find('tr', 'td').remove();
-            for faster jQuery solution*/
-                while ($('td').length > 0) {
-                    $('#pixel_canvas').find('tr', 'td').remove();
-                }
+            //clear any previous grids
+            $('#pixel_canvas').find('tr', 'td').remove();
 
             // build actual grid HTML elements
             for (let row = 0; row < gridWidth; row++) {
