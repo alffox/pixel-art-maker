@@ -30,7 +30,7 @@
 
         function makeGrid() {
             //clear any previous grids
-            $('#pixel_canvas').find('tr', 'td').remove();
+            $('#pixel_canvas').empty();
 
             // build actual grid HTML elements
             for (let row = 0; row < widht; row++) {
