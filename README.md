@@ -1,13 +1,16 @@
-# pixel-art-maker
+# Pixel Art Maker
 
-## Project for the Front-End Web Developer Nanodegree - Intermediate Javascript
+## Why this project ?
 
-The live app can be seen at <a href="https://alffox.github.io/pixel-art-maker/" target="_blank">https://alffox.github.io/pixel-art-maker/</a>
+This project was created as part of Udacity Front-End Web Developer Nanodegree (Intermediate Javascript) about the topic: DOM manipulation.
 
-This is a single-page web app that allows users to draw pixel art on a customizable canvas.
+It is a single-page web application that allows users to draw pixel art on a customizable canvas.
 
-Users should be able to:
+## How to run the app ?
 
-* Dynamically set the size of the table.
-* Choose a color.
-* Click a cell in the grid to fill that cell with the chosen color.
+Open the live app at https://alffox.github.io/pixel-art-maker/index.html
+
+1) In the top part, set the size of the canvas
+2) Choose a color
+3) Click a cell in the grid to fill that cell with the chosen color. If you wish to get a "paintbrush effect", just keep the mouse button pressed and move the arrow in the canvas
+4) If you wish to clear the canvas, just press the button "Clear the canvas"
